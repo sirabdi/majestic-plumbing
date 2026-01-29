@@ -7,7 +7,7 @@ import {
   HomeTestimoni,
 } from "@/components/molecules";
 import { HomeSlider } from "@/components/molecules/home-slider.molecule";
-import { HomeBlog, HomePlan } from "@/components/organisms";
+import { HomeBlog, HomeClients, HomePlan } from "@/components/organisms";
 import { HomeCaseStudies } from "@/components/organisms/home-case-studies.organism";
 import { HomeService } from "@/components/organisms/home-service.organism";
 
@@ -31,7 +31,7 @@ function HomePage() {
         <div className="container mx-auto px-3 lg:px-4 xl:px-0">
           <HomeTeam />
         </div>
-        {/* What Client Say */}
+        <HomeClients />
         <HomeBlog />
       </div>
     </>

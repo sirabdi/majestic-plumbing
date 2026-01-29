@@ -3,3 +3,5 @@ export * from "./home-blog.organism";
 export * from "./footer.organism";
 export * from "./header.organism";
 export * from "./home-service.organism";
+export * from "./home-case-studies.organism";
+export * from "./home-clients.organism";

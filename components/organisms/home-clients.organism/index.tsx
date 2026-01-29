@@ -2,6 +2,7 @@
 
 import { Badge, Button, ImageResolver, Title } from "@/components/atoms";
 import ArrowLeftIcon from "@/components/icons/arrow-left.icon";
+import QuoteIcon from "@/components/icons/quote.icon";
 import {
   Carousel,
   CarouselContent,
@@ -11,25 +12,31 @@ import {
   CarouselPrevious,
 } from "@/components/molecules";
 
-function HomeCaseStudies() {
+function HomeClients() {
   const cases = [
     {
       id: 1,
-      title: "Carpet Call Leak Detection",
-      tags: "Leak Detection",
-      img: "/images/cases/case-3.webp",
+      testi:
+        "The City of Perth have utilised Majestic Plumbing on several occasions. We have found them to be very professional in all the works they have carried out for us and have no hesitation in recommending them to other companies.",
+      by: "Mieke Malaika",
+      origin: "City of Perth",
+      img: "/images/testimoni/testimoni-2.webp",
     },
     {
       id: 2,
-      title: "Holiday Inn",
-      tags: "Planned Preventative Maintenance",
-      img: "/images/cases/case-1.webp",
+      testi:
+        "We are so glad Ivor Cohen introduced us to Majestic Plumbing, they are a high-quality contractor with professional service.",
+      by: "Mieke Malaika",
+      origin: "Churchill Knight Real Estate Agents",
+      img: "/images/testimoni/testimoni-2.webp",
     },
     {
       id: 3,
-      title: "The Ashby Bar & Bistro",
-      tags: "Leak Detection",
-      img: "/images/cases/case-2.webp",
+      testi:
+        "Majestic Plumbing has been providing high-quality plumbing services to Mercy College since 2002, including maintenance, emergency repairs, and involvement in major building projects. They’ve installed fire service tanks/pumps and water recycling systems.",
+      by: "Soren Hansen",
+      origin: "Mercy College",
+      img: "/images/testimoni/testimoni-2.webp",
     },
   ];
 
@@ -37,14 +44,10 @@ function HomeCaseStudies() {
     <div className="py-24">
       <div className="container flex flex-col gap-12 mx-auto px-3 lg:px-4 xl:px-0">
         <div className="flex flex-col gap-8 md:gap-12 lg:gap-18">
-          <div className="flex items-center justify-between gap-3 w-full">
-            <Title text="Case Studies" />
-            <Button
-              size="xl"
-              variant="secondary"
-              className="hidden md:flex mx-auto md:mx-0"
-            >
-              View all services <ArrowLeftIcon className="mt-1.5" />
+          <div className="flex flex-col md:flex-row items-center justify-between gap-3 w-full">
+            <Title text="What Our Clients Say" />
+            <Button size="xl" variant="secondary" className="mx-auto md:mx-0">
+              View case studies <ArrowLeftIcon className="mt-1.5" />
             </Button>
           </div>
         </div>
@@ -63,21 +66,27 @@ function HomeCaseStudies() {
                 key={index}
                 className="basis-full md:basis-1/2 lg:basis-1/3"
               >
-                <div className="w-full w-full h-[270px] md:h-[320px] lg:h-[500px] rounded-[18px] bg-black/50 relative">
-                  <ImageResolver
-                    fill
-                    alt="Hero image"
-                    src={item.img}
-                    skeletonClassName="rounded-[18px]"
-                    className="object-cover rounded-[18px]"
-                  />
-                  <div className="flex items-start flex-col gap-4 px-6 absolute bottom-6 w-full z-50">
-                    <p className="text-2xl text-white font-bold">
-                      {item.title}
-                    </p>
-                    <Badge variant="default">{item.tags}</Badge>
+                <div className="w-full w-full h-[560px] rounded-[18px] bg-shade-2 relative p-8 md:p-24 lg:p-[60px] flex flex-col justify-between">
+                  <div className="flex flex-col gap-6">
+                    <QuoteIcon />
+                    <p className="text-grey-1 md:text-lg">{item.testi}</p>
                   </div>
-                  <div className="w-full w-full h-[270px] md:h-[320px] lg:h-[500px] rounded-[18px] absolute z-20 bg-gradient-to-b from-black/0 from-[34.5%] to-black/80 top-0"></div>
+
+                  <div className="flex flex-col gap-8">
+                    <div className="relative w-[194.36px] h-[39.96px] rounded overflow-hidden">
+                      <ImageResolver
+                        fill
+                        alt="Hero image"
+                        src={item.img}
+                        skeletonClassName="rounded"
+                        className="object-contain rounded"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-0.5">
+                      <p className="text-xl text-black">{item.by}</p>
+                      <p className="text-grey-3">{item.origin}</p>
+                    </div>
+                  </div>
                 </div>
               </CarouselItem>
             ))}
@@ -105,4 +114,4 @@ function HomeCaseStudies() {
   );
 }
 
-export { HomeCaseStudies };
+export { HomeClients };
