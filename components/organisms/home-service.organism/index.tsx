@@ -80,7 +80,7 @@ function HomeService() {
                 <div className="w-full h-[270px] md:h-[320px] lg:h-[500px] rounded-[18px] bg-black/50 relative cursor-pointer">
                   <ImageResolver
                     fill
-                    alt="Hero image"
+                    alt={item.title}
                     src={item.img}
                     skeletonClassName="rounded-[18px]"
                     className="object-cover rounded-[18px]"

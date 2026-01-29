@@ -19,7 +19,7 @@ function BlogCard({ item }: Props) {
       <div className="relative w-full h-[320px] rounded-[15px] overflow-hidden">
         <ImageResolver
           fill
-          alt="Hero image"
+          alt={item.title}
           src={item.img}
           skeletonClassName="rounded-[15px]"
           className="object-cover rounded-[15px]"

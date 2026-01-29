@@ -66,7 +66,7 @@ function HomeCaseStudies() {
                 <div className="w-full w-full h-[270px] md:h-[320px] lg:h-[500px] rounded-[18px] bg-black/50 relative">
                   <ImageResolver
                     fill
-                    alt="Hero image"
+                    alt="Majestic Plumbing - Case Studies"
                     src={item.img}
                     skeletonClassName="rounded-[18px]"
                     className="object-cover rounded-[18px]"

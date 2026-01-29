@@ -10,7 +10,7 @@ function HomeTestimoni() {
         <ImageResolver
           fill
           src={url}
-          alt="Hero image"
+          alt="Majestic Plumbing - Testimonial"
           skeletonClassName="rounded"
           className="object-contain rounded"
         />

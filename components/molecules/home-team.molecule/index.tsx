@@ -26,7 +26,7 @@ function HomeTeam() {
         <div className="relative w-full h-[454px] lg:h-[640] rounded-[15px] overflow-hidden">
           <ImageResolver
             fill
-            alt="Hero image"
+            alt="Majestic Plumbing"
             src="/images/team-image.webp"
             skeletonClassName="rounded-[15px]"
             className="object-cover rounded-[15px]"

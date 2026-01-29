@@ -39,7 +39,7 @@ function HomeIndustries() {
         <div className="relative w-full h-[454px] lg:h-[708px] rounded-[15px] overflow-hidden">
           <ImageResolver
             fill
-            alt="Hero image"
+            alt="Majestic Plumbing - Industry Expertise"
             src="/images/industries-image.webp"
             skeletonClassName="rounded-[15px]"
             className="object-cover rounded-[15px]"

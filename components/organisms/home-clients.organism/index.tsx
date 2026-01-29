@@ -76,7 +76,7 @@ function HomeClients() {
                     <div className="relative w-[194.36px] h-[39.96px] rounded overflow-hidden">
                       <ImageResolver
                         fill
-                        alt="Hero image"
+                        alt="Majestic Plumbing Clients"
                         src={item.img}
                         skeletonClassName="rounded"
                         className="object-contain rounded"
