@@ -64,12 +64,14 @@ function HomeClients() {
             {cases.map((item, index) => (
               <CarouselItem
                 key={index}
-                className="basis-full md:basis-1/2 lg:basis-1/3"
+                className="basis-[70%] md:basis-[45%] lg:basis-[40%]"
               >
-                <div className="w-full w-full h-[560px] rounded-[18px] bg-shade-2 relative p-8 md:p-24 lg:p-[60px] flex flex-col justify-between">
+                <div className="w-full w-full h-[560px] rounded-[18px] bg-shade-2 relative p-8 md:p-10 lg:p-[60px] flex flex-col justify-between">
                   <div className="flex flex-col gap-6">
                     <QuoteIcon />
-                    <p className="text-grey-1 md:text-lg">{item.testi}</p>
+                    <p className="text-grey-1 text-md lg:text-lg">
+                      {item.testi}
+                    </p>
                   </div>
 
                   <div className="flex flex-col gap-8">
@@ -83,8 +85,12 @@ function HomeClients() {
                       />
                     </div>
                     <div className="flex flex-col gap-0.5">
-                      <p className="text-xl text-black">{item.by}</p>
-                      <p className="text-grey-3">{item.origin}</p>
+                      <p className="text-base lg:text-xl text-black">
+                        {item.by}
+                      </p>
+                      <p className="text-sm lg:text-base text-grey-3">
+                        {item.origin}
+                      </p>
                     </div>
                   </div>
                 </div>

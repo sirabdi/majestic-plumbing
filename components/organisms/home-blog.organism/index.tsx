@@ -35,7 +35,7 @@ function HomeBlog() {
   ];
 
   return (
-    <div className="bg-white-6 py-16">
+    <div className="bg-white-6 py-16 lg:py-24">
       <div className="container mx-auto px-3 lg:px-4 xl:px-0">
         <div className="flex flex-col gap-8 md:gap-12 lg:gap-18">
           <div className="block md:flex items-center justify-between">

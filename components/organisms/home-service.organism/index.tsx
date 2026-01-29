@@ -75,7 +75,7 @@ function HomeService() {
             {services.map((item, index) => (
               <CarouselItem
                 key={index}
-                className="basis-full md:basis-1/2 lg:basis-1/3"
+                className="basis-[70%] md:basis-[45%] lg:basis-[28.57%]"
               >
                 <div className="w-full h-[270px] md:h-[320px] lg:h-[500px] rounded-[18px] bg-black/50 relative cursor-pointer">
                   <ImageResolver
