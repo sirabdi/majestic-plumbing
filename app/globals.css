@@ -42,6 +42,7 @@
 
   --grey-1: oklch(0.3211 0 0);
   --grey-5: oklch(0.5837 0.0472 261.57);
+  --grey-6: oklch(0.7306 0.0186 264.45);
 
   --blue-1: oklch(0.5145 0.1554 253.48);
   --blue-3: oklch(0.2926 0.0838 261.01);
@@ -99,6 +100,7 @@
 
   --color-grey-1: var(--grey-1);
   --color-grey-5: var(--grey-5);
+  --color-grey-6: var(--grey-6);
 
   --color-blue-1: var(--blue-1);
   --color-blue-3: var(--blue-3);
