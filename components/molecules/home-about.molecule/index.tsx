@@ -9,7 +9,7 @@ import HoursIcon from "@/components/icons/hours.icon";
 import MedalIcon from "@/components/icons/medal.icon";
 import ThumbsUp from "@/components/icons/thumbs-up";
 
-function HomeAboutMolecule() {
+function HomeAbout() {
   const statistic = [
     {
       id: 1,
@@ -76,4 +76,4 @@ function HomeAboutMolecule() {
   );
 }
 
-export { HomeAboutMolecule };
+export { HomeAbout };

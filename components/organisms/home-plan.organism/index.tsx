@@ -12,7 +12,7 @@ import CheckList from "@/components/icons/checklist.icon";
 import WarningTask from "@/components/icons/warning-task.icon";
 import { Service } from "@/components/molecules";
 
-function HomePlanMolecule() {
+function HomePlan() {
   const services = [
     {
       id: 1,
@@ -36,8 +36,8 @@ function HomePlanMolecule() {
 
   return (
     <div className="border border-blue-3-15 rounded-[15px] p-4 sm:p-8 md:p-10 xl:px-[70px] xl:py-[60px] flex flex-col gap-18">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-6 lg:gap-8">
-        <div className="flex flex-col gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+        <div className="flex flex-col gap-8 order-last lg:order-first">
           <div className="pr-0 xl:pr-32 flex flex-col gap-3.5">
             <SubTitle text="Minimise downtime, maximise performance" />
             <Title text="Planned Preventive Maintenance to Safeguard Your Assets" />
@@ -73,4 +73,4 @@ function HomePlanMolecule() {
   );
 }
 
-export { HomePlanMolecule };
+export { HomePlan };

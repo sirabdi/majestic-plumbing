@@ -37,6 +37,8 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
+  --white-7: oklch(0.8975 0 0);
+
   --grey-1: oklch(0.3211 0 0);
 
   --blue-1: oklch(0.5145 0.1554 253.48);
@@ -44,7 +46,6 @@
   --blue-3-15: oklch(0.2926 0.0838 261.01 / 14.9%);
   --blue-4: oklch(0.2678 0.0624 261.46);
 
-  --text-outline-button: oklch(0.2926 0.0838 261.01);
   --shade-1: oklch(0.2926 0.0838 261.01 / 14.9%);
   --shade-2: oklch(0.5145 0.1554 253.48 / 5.1%);
 }
@@ -90,6 +91,8 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+
+  --color-white-7: var(--white-7);
 
   --color-grey-1: var(--grey-1);
 

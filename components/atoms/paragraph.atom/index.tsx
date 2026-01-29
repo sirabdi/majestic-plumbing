@@ -3,7 +3,9 @@ interface Props {
 }
 
 function Paragraph({ text }: Props) {
-  return <p className="text-center md:text-left text-grey-1">{text}</p>;
+  return (
+    <p className="text-center md:text-left text-grey-1 font-normal">{text}</p>
+  );
 }
 
 export { Paragraph };
