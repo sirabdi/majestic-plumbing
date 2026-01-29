@@ -11,12 +11,13 @@ export function HomeSlider() {
     <div>
       <Carousel className="w-full relative">
         <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
+          {Array.from({ length: 2 }).map((_, index) => (
             <CarouselItem key={index} className="relative">
               <div className="relative w-full h-[calc(100dvh-140px)] overflow-hidden">
                 <ImageResolver
                   fill
                   alt="Hero image"
+                  fetchPriority="high"
                   src="/images/slider/slider-1.webp"
                   className="object-cover"
                 />
