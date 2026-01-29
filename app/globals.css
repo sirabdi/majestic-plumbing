@@ -51,6 +51,8 @@
   --blue-3-15: oklch(0.2926 0.0838 261.01 / 14.9%);
   --blue-4: oklch(0.2678 0.0624 261.46);
 
+  --blue-1-15: oklch(0.5145 0.1554 253.48 / 14.9%);
+
   --shade-1: oklch(0.2926 0.0838 261.01 / 14.9%);
   --shade-2: oklch(0.5145 0.1554 253.48 / 5.1%);
 }
@@ -110,6 +112,8 @@
   --color-blue-3: var(--blue-3);
   --color-blue-3-15: var(--blue-3-15);
   --color-blue-4: var(--blue-4);
+
+  --color-blue-1-15: var(--blue-1-15);
 
   --color-shade-1: var(--shade-1);
   --color-shade-2: var(--shade-2);

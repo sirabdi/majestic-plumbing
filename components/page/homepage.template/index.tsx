@@ -8,6 +8,8 @@ import {
 } from "@/components/molecules";
 import { HomeSlider } from "@/components/molecules/home-slider.molecule";
 import { HomeBlog, HomePlan } from "@/components/organisms";
+import { HomeCaseStudies } from "@/components/organisms/home-case-studies.organism";
+import { HomeService } from "@/components/organisms/home-service.organism";
 
 function HomePage() {
   return (
@@ -21,11 +23,11 @@ function HomePage() {
         <div className="container mx-auto px-3 lg:px-4 xl:px-0">
           <HomePlan />
         </div>
-        {/* Our Service & Solution */}
+        <HomeService />
         <div className="container mx-auto px-3 lg:px-4 xl:px-0">
           <HomeIndustries />
         </div>
-        {/* Case Studies */}
+        <HomeCaseStudies />
         <div className="container mx-auto px-3 lg:px-4 xl:px-0">
           <HomeTeam />
         </div>

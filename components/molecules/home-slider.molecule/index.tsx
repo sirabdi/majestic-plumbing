@@ -1,14 +1,10 @@
+import { Button, ImageResolver } from "@/components/atoms";
 import {
-  Button,
   Carousel,
   CarouselContent,
   CarouselDots,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-  ImageResolver,
-  SubTitle,
-} from "@/components/atoms";
+} from "@/components/molecules";
 
 export function HomeSlider() {
   return (

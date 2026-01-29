@@ -5,7 +5,7 @@ import useEmblaCarousel, {
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/atoms";
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
@@ -143,15 +143,39 @@ function Carousel({
   );
 }
 
-function CarouselDots({ className }: { className?: string }) {
-  const { api, scrollSnaps, selectedIndex } = useCarousel();
+function CarouselDots({
+  dotClassName,
+  className,
+}: {
+  dotClassName?: string;
+  className?: string;
+}) {
+  const { api, scrollSnaps } = useCarousel();
+  const [activeSnap, setActiveSnap] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) return;
+
+    const update = () => {
+      setActiveSnap(api.selectedScrollSnap());
+    };
+
+    update();
+    api.on("select", update);
+    api.on("reInit", update);
+
+    return () => {
+      api.off("select", update);
+      api.off("reInit", update);
+    };
+  }, [api]);
 
   if (!api || scrollSnaps.length === 0) return null;
 
   return (
     <div
       className={cn(
-        "absolute bottom-8 left-1/2 flex -translate-x-1/2 gap-2",
+        "absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2",
         className,
       )}
     >
@@ -160,12 +184,11 @@ function CarouselDots({ className }: { className?: string }) {
           key={index}
           onClick={() => api.scrollTo(index)}
           className={cn(
-            "h-2.5 w-2.5 rounded-full transition-all",
-            index === selectedIndex
+            "h-2.5 rounded-full transition-all",
+            index === activeSnap
               ? "bg-blue-1 w-[30px]"
-              : "bg-white hover:bg-white/80",
+              : `w-2.5 bg-white/70 hover:bg-white ${dotClassName}`,
           )}
-          aria-label={`Go to slide ${index + 1}`}
         />
       ))}
     </div>

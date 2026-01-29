@@ -6,4 +6,3 @@ export * from "./title.atom";
 export * from "./image-resolver.atom";
 export * from "./list.atom";
 export * from "./badge.atom";
-export * from "./carousel.atom";
