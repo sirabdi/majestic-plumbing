@@ -27,7 +27,7 @@ function HomeTeam() {
           <ImageResolver
             fill
             alt="Hero image"
-            src="/images/team-image.jpg"
+            src="/images/team-image.webp"
             skeletonClassName="rounded-[15px]"
             className="object-cover rounded-[15px]"
           />

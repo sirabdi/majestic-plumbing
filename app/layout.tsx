@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { gilmerHeavy } from "@/src/utils/fonts";
-import { Footer } from "@/components/organisms";
+import { Footer, Header } from "@/components/organisms";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={gilmerHeavy.variable}>
+        <Header />
         {children}
         <Footer />
       </body>

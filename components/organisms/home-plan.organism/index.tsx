@@ -57,7 +57,7 @@ function HomePlan() {
           <ImageResolver
             fill
             alt="Hero image"
-            src="/images/service-image.jpg"
+            src="/images/service-image.webp"
             skeletonClassName="rounded-[15px]"
             className="object-cover rounded-[15px]"
           />

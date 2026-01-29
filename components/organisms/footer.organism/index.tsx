@@ -88,7 +88,7 @@ function Footer() {
                 <ImageResolver
                   fill
                   alt="Majestic Plumbing Logo"
-                  src="/images/logo-white.png"
+                  src="/images/logo-white.webp"
                   skeletonClassName="rounded"
                   className="object-cover rounded"
                 />
@@ -104,7 +104,7 @@ function Footer() {
                 <ImageResolver
                   fill
                   alt="Majestic Plumbing Associate Logo"
-                  src="/images/logo-associate.png"
+                  src="/images/logo-associate.webp"
                   skeletonClassName="rounded"
                   className="object-contain rounded"
                 />

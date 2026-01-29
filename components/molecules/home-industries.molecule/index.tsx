@@ -40,7 +40,7 @@ function HomeIndustries() {
           <ImageResolver
             fill
             alt="Hero image"
-            src="/images/industries-image.jpg"
+            src="/images/industries-image.webp"
             skeletonClassName="rounded-[15px]"
             className="object-cover rounded-[15px]"
           />

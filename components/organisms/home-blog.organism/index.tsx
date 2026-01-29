@@ -8,7 +8,7 @@ function HomeBlog() {
   const blogs = [
     {
       id: 1,
-      img: "/images/blogs/blog-image-1.jpg",
+      img: "/images/blogs/blog-image-1.webp",
       tags: "Commercial Plumbing",
       date: "Feb 22, 2025",
       title:
@@ -17,7 +17,7 @@ function HomeBlog() {
     },
     {
       id: 2,
-      img: "/images/blogs/blog-image-2.jpg",
+      img: "/images/blogs/blog-image-2.webp",
       tags: "Industrial Plumbing",
       date: "Mar 5, 2025",
       title:
@@ -26,7 +26,7 @@ function HomeBlog() {
     },
     {
       id: 3,
-      img: "/images/blogs/blog-image-3.jpg",
+      img: "/images/blogs/blog-image-3.webp",
       tags: "Plumbing Tips & Maintenance",
       date: "March 18, 2025",
       title: "Top Tips for Maintaining Your Hot Water Systems Year-Round",
