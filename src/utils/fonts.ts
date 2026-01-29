@@ -17,6 +17,11 @@ export const gilmerHeavy = localFont({
       weight: "700",
       style: "normal",
     },
+    {
+      path: "../fonts/Gilmer-Heavy.woff2",
+      weight: "800",
+      style: "normal",
+    },
   ],
   variable: "--font-gilmer-heavy",
   display: "swap",
