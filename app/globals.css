@@ -37,9 +37,11 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
+  --white-6: oklch(0.9745 0.0079 253.85);
   --white-7: oklch(0.8975 0 0);
 
   --grey-1: oklch(0.3211 0 0);
+  --grey-5: oklch(0.5837 0.0472 261.57);
 
   --blue-1: oklch(0.5145 0.1554 253.48);
   --blue-3: oklch(0.2926 0.0838 261.01);
@@ -92,9 +94,11 @@
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
 
+  --color-white-6: var(--white-6);
   --color-white-7: var(--white-7);
 
   --color-grey-1: var(--grey-1);
+  --color-grey-5: var(--grey-5);
 
   --color-blue-1: var(--blue-1);
   --color-blue-3: var(--blue-3);
@@ -168,4 +172,10 @@ body {
     bg-blue-3 
     text-white 
     hover:bg-blue-4;
+}
+
+.default-badge {
+  @apply bg-blue-1 
+    text-white
+    [a&]:hover:bg-primary/90;
 }

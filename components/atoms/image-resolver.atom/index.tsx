@@ -37,7 +37,7 @@ export function ImageResolver({
             loaded ? "opacity-100" : "opacity-0",
             className,
           )}
-          onLoadingComplete={() => setLoaded(true)}
+          onLoad={() => setLoaded(true)}
           onError={() => {
             setHasError(true);
             setLoaded(false);
