@@ -174,8 +174,7 @@ body {
 }
 
 .default-button {
-  @apply border 
-    bg-blue-3 
+  @apply bg-blue-3 
     text-white 
     hover:bg-blue-4;
 }
@@ -188,4 +187,15 @@ body {
   @apply bg-blue-1 
     text-white
     [a&]:hover:bg-primary/90;
+}
+
+@theme inline {
+  --animate-scroll: scroll var(--animation-duration, 40s)
+    var(--animation-direction, forwards) linear infinite;
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
 }
