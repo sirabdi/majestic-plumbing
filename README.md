@@ -1,6 +1,6 @@
 # Majestic Plumbing
 
-**Enterprise Company Profile Website**
+**Company Profile Website**
 Built with modern web technologies to deliver performance, scalability, and maintainability.
 
 🌐 **Live Website**: [https://majestic-plumbing.vercel.app/](https://majestic-plumbing.vercel.app/)
@@ -14,7 +14,6 @@ Majestic Plumbing is a professional **company profile website** developed for an
 * Clean and professional UI
 * High performance and SEO readiness
 * Scalable and maintainable architecture
-* Enterprise‑grade frontend standards
 
 This repository contains the complete source code for the website.
 
